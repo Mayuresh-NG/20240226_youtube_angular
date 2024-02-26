@@ -10,6 +10,7 @@
     flex-direction: column;
     height: 650px;
     margin-top: 56px;
+    position: fixed;
   }
   
   .side-menu::-webkit-scrollbar {
@@ -42,6 +43,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     margin-left: 20px;
+    margin-top: 20px;
   }
   
   .video-container {

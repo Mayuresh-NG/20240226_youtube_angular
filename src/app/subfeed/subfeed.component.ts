@@ -13,13 +13,19 @@ import { CommonModule } from '@angular/common';
     SideMenuComponent,
     NavbarComponent,
     RouterOutlet,
-    CommonModule
+    CommonModule,
   ],
   templateUrl: './subfeed.component.html',
   styleUrl: './subfeed.component.css',
 })
 export class SubfeedComponent {
-  Subscriptions: Array<string> = ['Aaj Tak', 'Law&Crime', 'BRIGHT SIDE','5-Minute Crafts','NASA'];
+  Subscriptions: Array<string> = [
+    'Aaj Tak',
+    'Law&Crime',
+    'BRIGHT SIDE',
+    '5-Minute Crafts',
+    'NASA',
+  ];
 
   feed: Array<{
     vdo_src: string;
@@ -91,4 +97,18 @@ export class SubfeedComponent {
       time: '6 days ago',
     },
   ];
+
+  filteredFeed: any[] = [];
+
+  constructor() {
+    this.filteredFeed = this.feed.filter((video) =>
+      this.Subscriptions.includes(video.channel_name)
+    );
+  }
+
+  filterBySubscription(subscription: string) {
+    this.filteredFeed = this.feed.filter(
+      (video) => video.channel_name === subscription
+    );
+  }
 }

@@ -4,18 +4,29 @@
   <div class="side-menu" style="flex-direction: column">
     <app-side-menu></app-side-menu>
   </div>
-  
-  <div class="main-content" >
-    <div style="width: 100%; margin: 20px;margin-top:0px;margin-bottom: 5px;">
+
+  <div>
+    <button
+      *ngFor="let subscription of Subscriptions"
+      (click)="filterBySubscription(subscription)"
+    >
+      {{ subscription }}
+    </button>
+  </div>
+
+  <div class="main-content">
+    <div
+      style="width: 100%; margin: 20px; margin-top: auto; margin-bottom: 5px"
+    >
       <h4 style="color: white; font-size: 20px; font-family: sans-serif">
         Latest
       </h4>
     </div>
-    <div  *ngFor="let i of feed" style="margin-right: auto;">
+    <div *ngFor="let i of filteredFeed || feed" style="margin-left: 24px">
       <div class="video-container">
         <img class="video-images" src="{{ i.vdo_src }}" alt="Video Thumbnail" />
       </div>
-  
+
       <div class="info-container">
         <div style="flex-direction: row; display: flex">
           <img class="channel-logo" src="{{ i.img_src }}" alt="Channel Logo" />
@@ -23,11 +34,10 @@
             {{ i.vdo_title }}
           </div>
         </div>
-  
+
         <div class="channel-name">{{ i.channel_name }}</div>
         <div class="views-time">{{ i.view }} &#8226; {{ i.time }}</div>
       </div>
     </div>
   </div>
-  
 </div>
