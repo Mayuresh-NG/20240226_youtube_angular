@@ -1,0 +1,31 @@
+/* Add this to your component styles or global styles */
+
+.sidebar {
+    width: 240px;
+    background-color: #0F0F0F;
+    color: #fff;
+    padding: 20px;
+    font-family: sans-serif;
+    
+  }
+  
+  h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  li:hover {
+    background-color: #555;
+    border-radius: 12px;
+  }
+  

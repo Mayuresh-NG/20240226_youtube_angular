@@ -4,9 +4,14 @@
   <div class="side-menu" style="flex-direction: column">
     <app-side-menu></app-side-menu>
   </div>
-
-  <div class="main-content">
-    <div  *ngFor="let i of feed" style="margin-left: 24px">
+  
+  <div class="main-content" >
+    <div style="width: 100%; margin: 20px;margin-top:0px;margin-bottom: 5px;">
+      <h4 style="color: white; font-size: 20px; font-family: sans-serif">
+        Latest
+      </h4>
+    </div>
+    <div  *ngFor="let i of feed" style="margin-right: auto;">
       <div class="video-container">
         <img class="video-images" src="{{ i.vdo_src }}" alt="Video Thumbnail" />
       </div>

@@ -9,6 +9,7 @@
     overflow-x: auto;
     flex-direction: column;
     height: 650px;
+    margin-top: 56px;
   }
   
   .side-menu::-webkit-scrollbar {
@@ -35,11 +36,12 @@
   .main-content {
     padding-top: 24px;
     background-color: #0f0f0f;
-    width: fit-content;
+    width: 1298px;
     height: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-left: 20px;
   }
   
   .video-container {

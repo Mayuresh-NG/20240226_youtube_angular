@@ -10,6 +10,8 @@
   overflow-y:auto;
   flex-direction: column;
   height: 650px;
+  margin-top: 56px;
+  position: fixed;
 }
 
 .side-menu::-webkit-scrollbar {

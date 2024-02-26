@@ -34,8 +34,9 @@
 }
 
 .container:active,
-    .container:focus {
-      margin-top: 10px;
-       background-color: #272727; 
-       border-radius: 10px
-    }
+.container:focus {
+  margin-top: 10px;
+  background-color: #272727;
+  border-radius: 10px;
+}
+

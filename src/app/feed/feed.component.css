@@ -1,12 +1,14 @@
 .main-content {
   padding-top: 24px;
   background-color: #0f0f0f;
-  width: 1298px;
+  width: 1260px;
   height: auto;
   display: flex;
   flex-direction: row;
-  flex-wrap:wrap;
-  margin-left: 24px
+  flex-wrap: wrap;
+  margin-left: 250px;
+  margin-top: 112px;
+  margin-right: 0;
 }
 
 .video-container {
