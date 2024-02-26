@@ -1,0 +1,33 @@
+.container2 {
+  display: flex;
+}
+.side-menu {
+  display: flex;
+  height: auto;
+  width: 240px;
+  background-color: #0f0f0f;
+  overflow-x: auto;
+  flex-direction: column;
+  height: 650px;
+}
+
+.side-menu::-webkit-scrollbar {
+  width: 12px;
+}
+
+.side-menu::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+.side-menu:hover::-webkit-scrollbar-thumb {
+  background-color: gray;
+}
+
+.side-menu {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+.side-menu:hover {
+  scrollbar-color: gray transparent;
+}
