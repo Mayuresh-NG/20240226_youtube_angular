@@ -35,7 +35,7 @@
   .main-content {
     padding-top: 24px;
     background-color: #0f0f0f;
-    width: 1298px;
+    width: fit-content;
     height: auto;
     display: flex;
     flex-direction: row;

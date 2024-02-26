@@ -6,7 +6,8 @@
   height: auto;
   width: 240px;
   background-color: #0f0f0f;
-  overflow-x: auto;
+  overflow-x:hidden;
+  overflow-y:auto;
   flex-direction: column;
   height: 650px;
 }
